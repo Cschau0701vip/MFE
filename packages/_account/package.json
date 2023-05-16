@@ -1,0 +1,54 @@
+{
+  "name": "account",
+  "version": "0.0.1",
+  "description": "Stencil Component Starter",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.js",
+  "es2015": "dist/esm/index.mjs",
+  "es2017": "dist/esm/index.mjs",
+  "types": "dist/types/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "unpkg": "dist/account/account.esm.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ionic-team/stencil-component-starter.git"
+  },
+  "files": [
+    "dist/",
+    "loader/"
+  ],
+  "scripts": {
+    "start": "webpack serve --config config/webpack.dev.js",
+    "build": "webpack --config config/webpack.prod.js"
+  },
+  "dependencies": {
+    "@babel/helper-compilation-targets": "^7.17.7",
+    "@babel/parser": "^7.17.9",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/template": "^7.16.7",
+    "@babel/traverse": "^7.17.9",
+    "@babel/types": "^7.17.0",
+    "@stencil/core": "^2.13.0",
+    "babel-loader": "^8.2.4",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "debug": "^4.3.4",
+    "gensync": "^1.0.0-beta.2",
+    "html-loader": "^3.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "jest-matcher-utils": "^27.5.1",
+    "js-tokens": "^7.0.0",
+    "jsesc": "^3.0.2",
+    "webpack": "^5.72.0"
+  },
+  "devDependencies": {
+    "@stencil/webpack": "^0.0.6",
+    "@types/jest": "^27.4.1",
+    "jest": "^27.5.1",
+    "jest-cli": "^27.5.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.8.1"
+  },
+  "license": "MIT"
+}
